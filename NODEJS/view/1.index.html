@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>index模板</h1>
+    大名:{{name}} -- 年龄:{{ age }}
+    <hr/>
+    {{each users myvalue index}}
+        <li>序号:{{index+1}}-乳名:{{myvalue}}</li>
+    {{/each}}
+
+    <hr/>
+    时间戳:{{ time }}
+    <br>
+    时间格式:{{ time|dateFormat "YYYY-MM--DD hh:mm:ss"}}
+</body>
+</html>
